@@ -49,4 +49,4 @@ ThemeData darkTheme = ThemeData(
     //   ThemeData(brightness: Brightness.dark).textTheme,
     // ),
     colorScheme: ColorScheme.fromSeed(
-        seedColor: CustomTheme.dark.appColors.seedColor, brightness: Brightness.dark));
+        seedColor: AppColors.veryDarkGrey, brightness: Brightness.dark));
