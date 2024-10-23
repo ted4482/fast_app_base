@@ -20,7 +20,7 @@ class HomeFragment extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.black,
+        color: context.appColors.roundedLayoutBackground,
       child: Stack(children: [
         RefreshIndicator(
           edgeOffset: TtossAppBar.appBarHeight,
