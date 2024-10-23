@@ -15,7 +15,7 @@ class PopularStockItem extends StatelessWidget {
         SizedBox(width: 40,
             child: number.toString().text.make()),
         width30,
-        stock.stockName.text.make(),
+        stock.name.text.make(),
         emptyExpanded,
         stock.todayPercentageString.text.color(stock.getPriceColor(context)).make(),
       ],
