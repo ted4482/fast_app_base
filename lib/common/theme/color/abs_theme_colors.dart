@@ -12,7 +12,7 @@ abstract class AbstractThemeColors {
 
   Color get veryBrightGrey => AppColors.brightGrey;
 
-  Color get drawerBg => const Color.fromARGB(255, 255, 255, 255);
+  Color get drawerBg => const Color.fromARGB(255, 50,50,50);
 
   Color get scrollableItem => const Color.fromARGB(255, 57, 57, 57);
 
@@ -30,7 +30,7 @@ abstract class AbstractThemeColors {
 
   Color get badgeBorder => Colors.transparent;
 
-  Color get divider => const Color.fromARGB(255, 80, 80, 228);
+  Color get divider => Colors.grey;
 
   Color get text => Colors.white;
 

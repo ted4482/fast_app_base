@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 
 import 'w_opensource_item.dart';
 
-/// 아래의 명령어를 통해서, 주기적으로 라이센스 json을 최신화 해주세요.
 /// flutter pub run flutter_oss_licenses:generate.dart -o assets/json/licenses.json --json
 class OpensourceScreen extends StatefulWidget {
   const OpensourceScreen({super.key});
@@ -14,6 +13,7 @@ class OpensourceScreen extends StatefulWidget {
   State<OpensourceScreen> createState() => _OpensourceScreenState();
 }
 
+/// 아래의 명령어를 통해서, 주기적으로 라이센스 json을 최신화 해주세요.
 class _OpensourceScreenState extends State<OpensourceScreen> {
   List<Package> packageList = [];
 
@@ -24,7 +24,7 @@ class _OpensourceScreenState extends State<OpensourceScreen> {
   }
 
   void initData() async {
-    final list = await LocalJson.getObjectList<Package>("json/licenses.json");
+    final list = await LocalJson.getObjectList<Package>("licenses.json");
     setState(() {
       packageList = list;
     });

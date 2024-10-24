@@ -26,27 +26,27 @@ class _SearchStockHistoryListState extends State<SearchStockHistoryList> with Se
             final stockName = searchData.searchHistoryList[index];
 
             return Column(
-            children: [
-              Container(
-                margin: const EdgeInsets.only(right: 8),
-                child: Row(
-                  children: [
-                    Tap(
+              children: [
+                Container(
+                  margin: const EdgeInsets.only(right: 8),
+                  child: Row(
+                    children: [
+                      Tap(
                         onTap: () {
                           Nav.push(StockDetailScreen(stockName));
                         },
                         child: stockName.text.make()
-                    ),
-                    Tap(
+                        ),
+                      Tap(
                         onTap: () {
                           searchData.removeHistory(stockName);
                         },
                         child: const Icon(Icons.close)),
-                  ],
-                ).box.withRounded(value: 6).color(context.appColors.roundedLayoutBackground).p8.make(),
-              ),
-            ],
-          );
+                    ],
+                  ).box.withRounded(value: 6).color(context.appColors.roundedLayoutBackground).p8.make(),
+                ),
+              ],
+            );
           },
         ),
       ),

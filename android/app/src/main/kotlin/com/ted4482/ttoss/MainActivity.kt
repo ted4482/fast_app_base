@@ -1,4 +1,4 @@
-package com.example.fast_app_base
+package com.ted4482.ttoss
 
 import io.flutter.embedding.android.FlutterActivity
 
