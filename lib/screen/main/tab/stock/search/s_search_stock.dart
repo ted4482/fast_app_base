@@ -18,6 +18,7 @@ class _SearchStockScreenState extends State<SearchStockScreen> with SearchStockD
 
   @override
   void initState() {
+    WidgetsBinding.instance.addPostFrameCallback;
     Get.put(SearchStockData());
 
     controller.addListener(() {

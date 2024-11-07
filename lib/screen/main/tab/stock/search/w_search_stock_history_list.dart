@@ -35,13 +35,14 @@ class _SearchStockHistoryListState extends State<SearchStockHistoryList> with Se
                         onTap: () {
                           Nav.push(StockDetailScreen(stockName));
                         },
-                        child: stockName.text.make()
-                        ),
+                        child: stockName.text.make(),
+                      ),
                       Tap(
                         onTap: () {
                           searchData.removeHistory(stockName);
                         },
-                        child: const Icon(Icons.close)),
+                        child: const Icon(Icons.close),
+                      ),
                     ],
                   ).box.withRounded(value: 6).color(context.appColors.roundedLayoutBackground).p8.make(),
                 ),
